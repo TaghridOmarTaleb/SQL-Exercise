@@ -31,4 +31,14 @@ VALUES (4, 'Layal', 18, 'F', 350, '2018-09-08');
 
 12- DELETE FROM students WHERE Name = 'Layal'
 
+14- CREATE TABLE ThirdTable AS SELECT employees.Name , employees.Company ,companies.Date
+          FROM   employees, companies
+          ON employees.ID = companies.ID;
+
+
+15- SELECT employees.name FROM employees INNER JOIN companies ON employees.Company=companies.Name
+ WHERE companies.Date<2000
+
+
+16- SELECT companies.Name From companies INNER JOIN employees ON employees.Company=companies.Name WHERE Role="Graphic Designer";
 
