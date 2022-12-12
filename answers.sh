@@ -42,3 +42,14 @@ VALUES (4, 'Layal', 18, 'F', 350, '2018-09-08');
 
 16- SELECT companies.Name From companies INNER JOIN employees ON employees.Company=companies.Name WHERE Role="Graphic Designer";
 
+
+18- SELECT * FROM students WHERE Points=(SELECT max(Points) FROM students)
+ 
+19- SELECT avg(Points) FROM students; 
+ 
+20- SELECT count(ID) FROM students WHERE Points="500";
+ 
+21- SELECT Name FROM students WHERE Name like '%s%' ;
+ 
+22- SELECT * FROM students ORDER BY Points DESC ;
+
