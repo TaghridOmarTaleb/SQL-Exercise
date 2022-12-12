@@ -22,8 +22,13 @@ CREATE TABLE graduates (ID Integer Not Null Primary key AUTOINCREMENT,
                         Age Integer, 
                         Gender Text, 
                         Points Integer, 
-                        Graduation date)
+                        Graduation DATE NOT NULL);
 
 
 
-10- 
+10- INSERT INTO graduates (ID, Name, Age, Gender, Points, Graduation)
+VALUES (4, 'Layal', 18, 'F', 350, '2018-09-08');
+
+12- DELETE FROM students WHERE Name = 'Layal'
+
+
