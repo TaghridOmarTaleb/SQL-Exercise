@@ -1,4 +1,6 @@
 
+Basic Queries.
+
 1- SELECT name from students
 
 2- SELECT * FROM students WHERE Age > 30
@@ -12,3 +14,16 @@
 6- UPDATE students set Points=400 WHERE name='Basma';
 
 7- UPDATE students set Points=100 WHERE name='Alex';
+
+Creating Table.
+
+CREATE TABLE graduates (ID Integer Not Null Primary key AUTOINCREMENT, 
+                        Name Text Not Null Unique, 
+                        Age Integer, 
+                        Gender Text, 
+                        Points Integer, 
+                        Graduation date)
+
+
+
+10- 
